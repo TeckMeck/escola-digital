@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Matéria</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style-materia.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <h1>Escola Digital</h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="mailto:contato-estudos-acessiveis@yopmail.com?subject=Assunto do Email">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="navigation">
+            <a href="../pages/conteudo.html">
+                <button>voltar</button>
+            </a>
+
+            <h2>Informatica Básica</h2>
+            
+        </section>
+
+        <section class="materia">
+            <div class="text-scroll">
+                <h2>Introdução</h2>
+                <p>A Informática Básica é um conjunto de conhecimentos essenciais para o uso eficaz de computadores e tecnologias digitais.</p>
+                <p>Envolve habilidades desde a operação do hardware, como ligar e desligar um computador, até o uso de software para realizar tarefas como digitar textos, navegar na internet e enviar e-mails.</p> 
+                <p>É um conjunto fundamental de conhecimentos que capacita as pessoas a interagirem com o mundo digital de maneira eficiente e segura.</p>
+            </div>
+            
+            <img src="../img/butao play.jpg" alt="Botão de iniciar vídeo" id="play-button" >
+        </section>
+
+        
+
+
+        <section class="aula">
+            <a href="teoria-Informatica.html">
+                <button>Assistir aulas teoricas</button>
+            </a>
+
+            <a href="pratica-Informatica.html">
+                <button>Assistir aulas praticas</button>
+            </a>
+        </section>
+        <footer class="footer">
+            <h2>&copy; 2023-2024 Nathan Simões & Isaque Simões</h2>
+        </footer>
+
+        <!-- Adicione isso no final do seu body -->
+        <div id="video-modal" class="modal modal-hidden">
+            <span class="close" onclick="closeVideoModal()">&times;</span>
+            <div class="modal-content">
+                <iframe id="youtube-video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <script src="..//js/play-video.js"></script>
+    </body>
+</html>

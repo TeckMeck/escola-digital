@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Pratica</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style-aula.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <h1>Escola Digital</h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="mailto:contato-estudos-acessiveis@yopmail.com?subject=Assunto do Email">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="navigation">
+            <a href="../pages/materia-Informatica.html">
+                <button>voltar</button>
+            </a>
+
+            
+            <h2>Pratica</h2>
+            
+        </section>
+
+
+
+        <section class="aula">
+            
+            <div class="aula-item">
+                <div class="text-scroll">
+                    <h2>AULA #1</h2>
+                    <h2>Praticando com o Paint</h2>
+                    <p>Explicação sobre a importância da prática e a escolha do programa "Paint" para desenvolver habilidades com o mouse.</p>
+
+                    <h2>Abertura do "Paint"</h2>
+                    <p>Instruções sobre como abrir o programa "Paint" no computador.</p>
+
+                    <h2>Guia para Prática com o Mouse</h2>
+                    <p>Demonstrações de como movimentar a seta na tela utilizando o mouse.</p>
+                    <p>Incentivo para experimentar diferentes movimentos e sensibilidades do mouse.</p>
+
+                    <h2>Explorando Cores e Paleta</h2>
+                    <p>Orientações sobre como acessar a paleta de cores no "Paint".</p>
+                    <p>Instruções para escolher cores diferentes e tornar os desenhos mais vibrantes.</p>
+
+                    <h2>Uso da Borracha para Correções</h2>
+                    <p>Demonstração de como utilizar a borracha no "Paint" para apagar partes do desenho.</p>
+
+                    <h2>Encerramento da Prática no "Paint"</h2>
+                    <p>Instruções sobre como encerrar o programa "Paint" de maneira correta.</p>
+
+                    <h2>Ênfase na Prática Contínua</h2>
+                    <p>Destaque para a importância da prática constante no desenvolvimento das habilidades com o mouse.</p>
+                    <p>Estímulo para continuar experimentando e praticando até a próxima aula.</p>
+                              
+                </div>
+                
+                <img src="../img/img-play/butao_play_ 1.jpg" alt="Botão de iniciar vídeo" onclick="openVideoModal(getVideoLink(1))">
+            </div>
+            
+            <div class="aula-item">
+                <div class="text-scroll">
+                    <h2>Em Breve...</h2>
+                    <h2>AULA #2</h2>
+                    <p>Na segunda aula, mergulharemos no mundo da digitação. Iremos praticas coo teclado de maneira eficiente para criar textos e documentos no computador.</p>
+                              
+                </div>
+                
+                <img src="../img/img-play/butao_play_ 2.jpg" alt="Botão de iniciar vídeo" onclick="openVideoModal(getVideoLink(2))">
+            </div>
+
+        </section>
+
+
+
+        <section class="return">
+            <a href="#">
+                <button>voltar ao topo</button>
+            </a>
+        </section>
+        <footer class="footer">
+            <h2>&copy; 2023-2024 Nathan Simões & Isaque Simões</h2>
+        </footer>
+        
+        <div id="video-modal" class="modal modal-hidden">
+            <span class="close" onclick="closeVideoModal()">&times;</span>
+            <div class="modal-content">
+                <iframe id="youtube-video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+
+        <script src="../js/play-video-pratica.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+.header nav ul{
+    display: flex;
+}
+
+.header nav ul li a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1px 10px 4px;
+    border-radius: 20px;
+    border: 2.5px solid white;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.header nav ul li a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+/* Cor de Seleção */
+::selection{
+    background-color: #fff;
+    color: #000;
+}

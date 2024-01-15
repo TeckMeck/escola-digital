@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Teoria</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style-aula.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <h1>Escola Digital</h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="mailto:contato-estudos-acessiveis@yopmail.com?subject=Assunto do Email">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="navigation">
+            <a href="../pages/materia-Informatica.html">
+                <button>voltar</button>
+            </a>
+
+            
+            <h2>Teoria</h2>
+            
+        </section>
+
+
+
+        <section class="aula">
+            <div class="aula-item">
+                <div class="text-scroll">
+                    <h2>AULA #1</h2>
+                    <h2>Como Ligar o Computador</h2>
+                    <p>Apresentação de dois modelos: Desktop (tradicional) e Notebook.</p>
+                    <p>No Desktop, ligar o gabinete e o monitor através do botão "on/off".</p>
+                    <p>No Notebook, localizar e pressionar o botão "on/off" para iniciar.</p>
+
+                    <h2>Processo de Inicialização:</h2>
+                    <p>Equipamentos antigos como televisões respondem automaticamente, mas no computador ocorre um processo de inicialização.</p>
+                    <p>O sistema é carregado durante esse processo.</p>
+
+                    <h2>Tela Inicial do Windows:</h2>
+                    <p>Após a inicialização, o sistema apresenta uma tela inicial.</p>
+                    <p>Descrição da tela, incluindo relógio no canto inferior direito, barra de tarefas com principais recursos e logotipo do Windows.</p>
+
+                    <h2>Significado do Sistema:</h2>
+                    <p>Analogia: O sistema é como o ambiente de trabalho na cozinha de uma casa.</p>
+                    <p>Necessidade do sistema para utilizar as ferramentas (programas) no computador.</p>
+                    
+                    <h2>Resumo da Aula:</h2>
+                    <p>1. Ligar o computador pelo botão "on/off".
+                    </p>
+                    <p>2. No Desktop, ligar também o monitor.</p>
+                    <p>3. No Notebook, localizar o botão "on/off".</p>
+                    <p>4. Aguardar o sistema iniciar.</p>
+                    <p>5. Tela inicial do Windows: relógio, barra de tarefas, logotipo.</p>
+                    <p>6. Sistema como ambiente de trabalho; ferramentas são os programas.</p>
+
+                </div>
+                
+                <img src="../img/img-play/butao_play_ 1.jpg" alt="Botão de iniciar vídeo" onclick="openVideoModal(getVideoLink(1))">
+            </div>
+
+            <div class="aula-item">
+                <div class="text-scroll">
+                    <h2>AULA #2</h2>
+                    <h2>Como Utilizar o Mouse</h2>
+                    <p>Boas-vindas à segunda aula do Curso de Informática.</p>
+                    <p>Foco na aprendizagem inicial do uso do mouse.</p>
+
+                    <h2>Uso do Mouse</h2>
+                    <p>Apresentação de diferentes modelos de mouse: sem fio, com fio e de notebook.</p>
+                    <p>Função básica do mouse: movimentar a seta na tela.</p>
+                    <p>Demonstração prática de como usar o mouse no notebook e no computador tradicional.</p>
+
+                    <h2> Funções dos Botões do Mouse</h2>
+                    <p>Botão direito: Apresentação de opções contextuais ao clicar em diferentes áreas.</p>
+                    <p>Botão esquerdo: Utilização para abrir, fechar e escolher opções.</p>
+
+                    <h2>Desligamento do Computador</h2>
+                    <p>Explicação sobre como desligar o computador.</p>
+                    <p>Demonstração prática do processo, destacando o botão "Iniciar" e a opção "Desligar".</p>
+
+                    
+                </div>
+                
+                <img src="../img/img-play/butao_play_ 2.jpg" alt="Botão de iniciar vídeo" onclick="openVideoModal(getVideoLink(2))">
+            </div>
+       
+            <div class="aula-item">
+                <div class="text-scroll">
+                    <h2>Em Breve...</h2>
+                    <h2>AULA #3</h2>
+                    <p>Na terceira aula, mergulharemos no mundo da digitação. Aprenderemos a usar o teclado de maneira eficiente para criar textos e documentos no computador.</p>
+                              
+                </div>
+                
+                <img src="../img/img-play/butao_play_ 3.jpg" alt="Botão de iniciar vídeo" onclick="openVideoModal(getVideoLink(3))">
+            </div>
+       
+
+        </section>
+
+
+
+        <section class="return">
+            <a href="#">
+                <button>voltar ao topo</button>
+            </a>
+        </section>
+        <footer class="footer">
+            <h2>&copy; 2023-2024 Nathan Simões & Isaque Simões</h2>
+        </footer>
+        
+        <div id="video-modal" class="modal modal-hidden">
+            <span class="close" onclick="closeVideoModal()">&times;</span>
+            <div class="modal-content">
+                <iframe id="youtube-video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+
+        <script src="../js/play-video-teoria.js"></script>
+    </body>
+</html>

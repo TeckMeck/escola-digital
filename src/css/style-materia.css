@@ -1,0 +1,271 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "navigation navigation navigation navigation"
+                         "materia materia materia materia"
+                         "aula aula aula aula"
+                         "footer footer footer footer";
+    grid-template-columns: repeat(4,1fr);
+    font-size: 1.6rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    background: #000;
+}
+
+/* HEADER */
+.header{
+    grid-area: header;
+    background-color: #000;
+}
+
+.header .header-container{
+    display: flex;
+    padding: 20px 60px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* NAVIGATION */
+.navigation{
+    grid-area: navigation;
+    background-color: #000;
+    border-top: 1px solid #F98600;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 120px;
+    align-items: center;
+    min-height: 75px;
+}
+
+.navigation h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 4px 40px;
+    margin-right: 7%;
+    border-radius: 20px;
+    background-color: #F98600;
+    color: #fff;
+}
+
+/* NAVIGATION/ RETURN */
+.navigation button{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 4px 15px;
+    border-radius: 20px;
+    border: 2.5px solid #f9850073;
+    color: #fff;
+    background-color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navigation button:hover{
+    color: #fff;
+    background-color: #F98600;
+}
+
+
+
+
+/* MATERIA */
+.materia{
+    grid-area: materia;
+    padding: 35px;
+    overflow: hidden;
+}
+
+.materia {
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0px 50px 40px;
+    background-color: #212121;
+    color: #fff;
+    border-radius: 20px; 
+}
+
+.text-scroll{
+    overflow-y: scroll;
+    max-height: 250px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.text-scroll h2{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.text-scroll p {
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+}
+
+.materia img {
+    width: 450px;
+    height: auto;
+    max-height: 300px;
+    cursor: pointer;
+}
+
+
+
+
+/* SCROLL AJUST */
+
+.text-scroll::-webkit-scrollbar{
+    width: 10px; 
+}
+
+.text-scroll::-webkit-scrollbar-thumb {
+    background-color: #f9850073; 
+    border-radius: 10px; 
+}
+
+.text-scroll::-webkit-scrollbar-track {
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.text-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #F98600;
+    
+}
+
+
+/* SCROLL AJUST  */
+.text-scroll::-moz-scrollbar {
+    width: 6px;
+}
+
+.text-scroll::-moz-scrollbar-thumb {
+    background-color: #f9850073; 
+    border-radius: 10px; 
+}
+
+.text-scroll::-moz-scrollbar-track {
+    background-color: #212121;
+    border-radius: 10px;
+}
+
+.text-scroll::-moz-scrollbar-thumb:hover{
+    background-color: #F98600;
+
+}
+
+
+
+
+/* Adicione isso ao seu CSS */
+.modal {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal-content {
+    text-align: center;
+    margin: 20px 200px;
+    padding: 50px;
+    background-color: #212121;
+    border-radius: 30px;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 3%;
+    right: 20%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #f98500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.close:hover {
+    color: #fff;
+}
+
+
+
+
+/* AULAS */
+.aula{
+    grid-area: aula;
+    background-color: #212121;
+}
+
+.aula{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    min-height: 75px;
+}
+
+.aula button{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: 2.5px solid #F98600;
+    color: #fff;
+    background-color: #212121;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.aula button:hover{
+    color: #000;
+    background-color: #F98600;
+}
+
+
+
+
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    display: flex;
+    border-top: 1px solid #F98600;
+    background-color: #000;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 60px;
+}
+
+.footer h2{
+    font-size: 1rem;
+    color: #fff;
+}

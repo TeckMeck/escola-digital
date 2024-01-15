@@ -1,0 +1,169 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "navigation navigation navigation navigation"
+                         "conteudo conteudo conteudo conteudo"
+                         "return return return return"
+                         "footer footer footer footer";
+    grid-template-columns: repeat(4,1fr);
+    font-size: 1.6rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* HEADER */
+.header{
+    grid-area: header;
+    background-color: #000;
+}
+
+.header .header-container{
+    display: flex;
+    padding: 20px 60px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* NAVIGATION */
+.navigation{
+    grid-area: navigation;
+    background-color: #000;
+    border-top: 1px solid #F98600;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 120px;
+    align-items: center;
+    min-height: 75px;
+}
+
+/* NAVIGATION/ RETURN */
+.navigation button,
+.return button{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 4px 15px;
+    border-radius: 20px;
+    border: 2.5px solid #f9850073;
+    color: #fff;
+    background-color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navigation button:hover,
+.return button:hover{
+    color: #fff;
+    background-color: #F98600;
+}
+
+
+/* SEARCH BAR */
+#search-bar{
+    width: 60%;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 4px 20px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #212121;
+    transition: 0.3s;
+}
+
+
+/* AVISO CONTEUDO NAO ENCONTRADO */
+#mensagem-resultado{
+    display: none;
+    color: #ffffff5f;
+    border: 1.5px solid #ffffff5f;
+    border-radius: 50px;
+    flex-direction: column;
+    margin: 50px 100px;
+    text-align: center;
+    padding: 80px;
+}
+
+/* CONTEUDO  */
+.conteudo{
+    grid-area: conteudo;
+    padding: 50px 120px;
+    background-color: #000;
+}
+
+.listagem-conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-conteudo{
+    text-align: center;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.cartao-conteudo img{
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    width: 259px;
+    height: 170px;
+} 
+
+.nome-conteudo{
+    padding-bottom: 6px;
+    background-color: #212121;
+    border-radius: 0px 0px 15px 15px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+
+/* RETURN */
+.return{
+    grid-area: return ;
+    background-color: #000;
+    border-bottom: 1px solid #F98600;
+}
+
+.return{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 120px;
+    align-items: center;
+    min-height: 75px;
+}
+
+
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    display: flex;
+    background-color: #000;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 60px;
+}
+
+.footer h2{
+    font-size: 1rem;
+    color: #fff;
+}
